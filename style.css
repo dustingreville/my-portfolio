@@ -19,23 +19,23 @@ footer {
     width: 100%;
 }
 
-nav ul {
+ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
+ul li {
     display: inline;
     margin: 0 10px;
 }
 
-nav ul li a {
+ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+ul li a:hover {
     text-decoration: underline;
 }
 
@@ -50,6 +50,86 @@ section {
 
 h2 {
     color: #ffffff;
+}
+
+button {
+    border: solid black;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    position: relative;
+    top: 30px;
+    right: 90px;
+}
+
+form {
+    background-color: #000000;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 35px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 700;
+    line-height: 1.75
+}
+
+input,
+[type="text"],
+[type="email"] {
+    padding: 10px;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 0px 0px 30px;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 0px 0px 30px;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+
+}
+
+input[type="reset"] {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+
+}
+
+input[type="submit"]:hover {
+    background-color: dimgray;
+}
+
+input[type="reset"]:hover {
+    background-color: dimgray;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
 }
 
 footer {

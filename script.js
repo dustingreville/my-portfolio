@@ -1,14 +1,14 @@
 function toggleDetails(id) {
     var details = document.getElementById(id);
-    var button = details.previousElementSibling; 
+    var button = details.previousElementSibling;
 
-    
+
     if (details.style.display === "none") {
-        details.style.display = "block"; 
-        button.textContent = "Hide Details"; 
+        details.style.display = "block";
+        button.textContent = "Hide Details";
     } else {
-        details.style.display = "none"; 
-        button.textContent = "Show Details"; 
+        details.style.display = "none";
+        button.textContent = "Show Details";
     }
 }
 

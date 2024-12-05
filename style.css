@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-header, footer {
+header,footer {
     background-color: #333;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -76,6 +76,7 @@ form {
     width: 400px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 label {
@@ -162,7 +163,9 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    header, footer {
+
+    header,
+    footer {
         padding: 10px;
     }
 

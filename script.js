@@ -1,16 +1,28 @@
-const project1 = document.getElementById('project1');
-const details1 = document.getElementById('details1');
+// Toggle project details visibility
+function toggleDetails(id) {
+    var details = document.getElementById(id);
+    var button = details.previousElementSibling; // Get the button next to the details
 
-const project2 = document.getElementById('project2');
-const details2 = document.getElementById('details2');
-
-project1.addEventListener('click', function() {
-    
-    if (details.style.display === 'none' || details.style.display === '') {
-        details.style.display = 'block';
-        button.textContent = 'Hide Details';
+    // Toggle visibility and change button text
+    if (details.style.display === "none") {
+        details.style.display = "block"; // Show details
+        button.textContent = "Hide Details"; // Change button text to "Hide Details"
     } else {
-        details.style.display = 'none';
-        button.textContent = 'Show Details';
+        details.style.display = "none"; // Hide details
+        button.textContent = "Show Details"; // Change button text to "Show Details"
     }
+}
+
+// Attach event listeners to buttons after DOM is loaded
+document.addEventListener('DOMContentLoaded', function () {
+    var project1Button = document.getElementById('project1');
+    var project2Button = document.getElementById('project2');
+
+    project1Button.addEventListener('click', function () {
+        toggleDetails('details1');
+    });
+
+    project2Button.addEventListener('click', function () {
+        toggleDetails('details2');
+    });
 });
